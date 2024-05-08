@@ -34,17 +34,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://medminder.my.salesforce.com',
-			'https://medminder.my.site.com/CustomerService',
+			'https://medminder--dev.sandbox.my.salesforce.com',
+			'https://medminder--dev.sandbox.my.site.com/customerservice',
 			gslbBaseURL,
-			'00D5f000000HSjC',
+			'00D8G0000008gXK',
 			'Chat',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-core2.sfdc-lywfpd.salesforceliveagent.com/content',
-				deploymentId: '5725f000000IvLZ',
-				buttonId: '5735f000000Iwj3',
-				baseLiveAgentURL: 'https://d.la1-core2.sfdc-lywfpd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I5f000000DD1iEAG_17f799c825d',
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-8tgtt5.salesforceliveagent.com/content',
+				deploymentId: '5728G000000003P',
+				buttonId: '5738G000000003e',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-8tgtt5.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I8G000000CaVYUA0_17e4f287c56',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -52,7 +52,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://medminder.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://medminder--dev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
